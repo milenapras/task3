@@ -1,0 +1,23 @@
+<?php
+// test_connection.php
+try {
+    $pdo = new PDO(
+        "mysql:host=localhost;dbname=u82575;charset=utf8mb4",
+        "u82575",
+        "6433784"
+    );
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    echo "Подключение успешно!<br>";
+    
+    // Проверка таблиц
+    $stmt = $pdo->query("SHOW TABLES");
+    echo "Таблицы в базе данных:<br>";
+    while ($row = $stmt->fetch()) {
+        echo "- " . $row[0] . "<br>";
+    }
+    
+} catch (PDOException $e) {
+    echo "Ошибка: " . $e->getMessage();
+}
+?>
