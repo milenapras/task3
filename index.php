@@ -221,7 +221,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         
         body {
-            background: linear-gradient(145deg, #e0eaf4 0%, #cfdef3 100%);
+            background: linear-gradient(135deg, #e0eaf4 0%, #ffdad8 100%);
             font-family: 'Segoe UI', 'Roboto', system-ui, sans-serif;
             padding: 2rem 1.5rem;
             min-height: 100vh;
@@ -240,7 +240,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         
         .result-header {
-            background: linear-gradient(135deg, #1a2a3f, #0f1a2a);
+            background: rgba(100, 2, 2, 1);
             padding: 2rem;
             color: white;
         }
@@ -312,7 +312,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="result-container">
     <div class="result-header">
         <h1>Результат обработки</h1>
-        <p>Серверная валидация и сохранение в базу данных u82671</p>
+        <p>Серверная валидация и сохранение в базу данных u82575</p>
     </div>
     
     <div class="result-body">
