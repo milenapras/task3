@@ -19,7 +19,7 @@ CREATE TABLE programming_languages (
     PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Таблица связи заявок с языками (один ко многим)
+-- Таблица связи заявок с языками (многие ко многим)
 CREATE TABLE application_languages (
     id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
     application_id INT(10) UNSIGNED NOT NULL,
